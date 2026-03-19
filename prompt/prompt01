@@ -1,0 +1,22 @@
+
+RSMEというiOSアプリをFlutterで作りたい。リアルタイム音声文字起こし＋AI解説アプリ。
+
+
+
+要件：
+
+- マイクで音声をリアルタイムキャプチャ
+
+- Deepgram Nova-2 WebSocketでリアルタイムSTT（日英対応）
+
+- 上部：文字起こしテキストをリアルタイム表示
+
+- 下部：Claude API（claude-haiku）で文脈を踏まえた解説を生成・表示
+
+- 設定画面：Deepgram APIキー、Claude APIキー入力・保存（flutter_secure_storage）
+
+- iOS対応（flutter_sound or record パッケージ使用）
+
+
+
+まずFlutterプロジェクトの雛形を作成して、ディレクトリ構成とpubspec.yamlから始めてください。
